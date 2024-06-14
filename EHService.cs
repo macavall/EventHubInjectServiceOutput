@@ -65,14 +65,6 @@ public class EHService : IEHService
             {
                 await client.SendAsync(eventDataList);
             }
-
-            Console.WriteLine("Sent Batch... Size: {0}", eventDataList.Count);
-
-            counter++;
-            if (counter > 9)
-            {
-                counter = 0;
-            }
         }
         finally
         {
