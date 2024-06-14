@@ -31,6 +31,7 @@ public class EHService : IEHService
 
     public async Task<string> GetStats()
     {
+        await Task.Delay(1);
         return $"Task completed. Queue length: {_taskQueue.Count}. Active tasks: {activeTasks}";
     }
 
