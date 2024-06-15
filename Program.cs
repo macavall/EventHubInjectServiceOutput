@@ -12,7 +12,8 @@ public class Program
         {
             services.AddApplicationInsightsTelemetryWorkerService();
             services.ConfigureFunctionsApplicationInsights();
-            services.AddSingleton<IEHService, EHService>();
+            //services.AddSingleton<IEHService, EHService>();
+            services.AddSingleton<IEHService2, EHService2>();
         })
         .Build();
 
