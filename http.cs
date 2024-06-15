@@ -29,10 +29,10 @@ namespace eventhubfamain
 
     public class httpStart
     {
-        private readonly ILogger<http> _logger;
+        private readonly ILogger<httpStart> _logger;
         private readonly IEHService2 ehService2;
 
-        public httpStart(ILogger<http> logger, IEHService2 _ehService2)
+        public httpStart(ILogger<httpStart> logger, IEHService2 _ehService2)
         {
             _logger = logger;
             ehService2 = _ehService2;
@@ -51,10 +51,10 @@ namespace eventhubfamain
 
     public class httpStop
     {
-        private readonly ILogger<http> _logger;
+        private readonly ILogger<httpStop> _logger;
         private readonly IEHService2 ehService2;
 
-        public httpStop(ILogger<http> logger, IEHService2 _ehService2)
+        public httpStop(ILogger<httpStop> logger, IEHService2 _ehService2)
         {
             _logger = logger;
             ehService2 = _ehService2;
